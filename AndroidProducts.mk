@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_X306FC_PRC.mk
+    $(LOCAL_DIR)/twrp_X306FC_PRC.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_X306FC_PRC-user \
-    omni_X306FC_PRC-userdebug \
-    omni_X306FC_PRC-eng
+    twrp_X306FC_PRC-user \
+    twrp_X306FC_PRC-userdebug \
+    twrp_X306FC_PRC-eng

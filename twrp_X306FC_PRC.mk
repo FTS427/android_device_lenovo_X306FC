@@ -9,14 +9,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from X306FC_PRC device
 $(call inherit-product, device/lenovo/X306FC_PRC/device.mk)
 
 PRODUCT_DEVICE := X306FC_PRC
-PRODUCT_NAME := omni_X306FC_PRC
+PRODUCT_NAME := twrp_X306FC_PRC
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-X306FC_PRC
 PRODUCT_MANUFACTURER := lenovo
