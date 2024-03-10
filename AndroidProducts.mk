@@ -8,6 +8,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_X306FC_PRC.mk
 
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 COMMON_LUNCH_CHOICES := \
     twrp_X306FC_PRC-user \
     twrp_X306FC_PRC-userdebug \
