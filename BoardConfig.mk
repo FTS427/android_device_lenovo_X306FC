@@ -1,4 +1,4 @@
-#
+ok#
 # Copyright (C) 2024 The Android Open Source Project
 # Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
 #
@@ -102,7 +102,17 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_EXCLUDE_SUPERSU := true
+TW_EXCLUDE_MTP := true
+TW_OEM_BUILD := true
+# Add EXT4 support
+TARGET_USERIMAGES_USE_EXT4 := true
+TW_NO_SCREEN_TIMEOUT := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_DEFAULT_LANGUAGE := zh_CN
+TW_INCLUDE_FASTBOOTD := true
